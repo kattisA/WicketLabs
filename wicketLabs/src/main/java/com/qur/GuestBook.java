@@ -18,14 +18,14 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-public class GuestBook extends WebPage {
+public class GuestBook extends MyWebPage {
 
     private static final List<Comment> commentList = Collections.synchronizedList(new ArrayList<Comment>());
 
     public GuestBook(){
-        add(new CommentForm("commentForm"));
+        queue(new CommentForm("commentForm"));
 
-        add(new PropertyListView<Comment>("comments", commentList){
+        queue(new PropertyListView<Comment>("comments", commentList){
             @Override
             protected void populateItem(ListItem<Comment> listItem) {
                 listItem.add(new Label( "date"));

@@ -1,10 +1,5 @@
 package com.qur;
 
-import org.apache.wicket.markup.html.WebPage;
+public class Page2 extends MyWebPage {
 
-public class Page2 extends WebPage {
-
-    public Page2(){
-        add(new NavomaticBorder("navigationBorder"));
-    }
 }
