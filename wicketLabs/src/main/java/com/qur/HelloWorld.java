@@ -1,14 +1,11 @@
 package com.qur;
 
-import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 
-public class HelloWorld extends WebPage {
+public class HelloWorld extends MyWebPage {
 
     public HelloWorld(){
-        NavomaticBorder navigationBorder = new NavomaticBorder("navigationBorder");
-        add(navigationBorder);
-        navigationBorder.add(new Label("message", "Hello World!"));
+       queue(new Label("message", "Hello World!"));
     }
 
 }

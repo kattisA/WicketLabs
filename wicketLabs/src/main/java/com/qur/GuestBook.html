@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <body>
-<span wicket:id="navomaticBorder">
+<wicket:extend>
+    <span wicket:id="navomaticBorder">
     <form wicket:id = "commentForm" id = "commentForm">
     Add your comment here:
     <p>
@@ -26,6 +27,8 @@
 </wicket:remove>
 
 </span>
+</wicket:extend>
+
 
 </body>
 </html>
